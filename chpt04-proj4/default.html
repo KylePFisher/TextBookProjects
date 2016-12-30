@@ -30,10 +30,43 @@
         </header>
         
         <main>
-            <ul>
-                <li>Bullet point</li>
-            </ul>
-            <p>Paragraph</p>
+            <form method="post" action="http://www.mccinfo.net/webresources/cgi-bin/formmail.asp">
+                <input name="recipient" type="hidden" value="kpfisher@mail.mccneb.edu">
+                <input type="hidden" name="subject" value="Internet survery form">
+                <input name="title" type="hidden" value="Thank you for taking the time to complete the form.
+                Below is the information that you submitted.  Please print this page and keep it for your records.">
+                <input name="bgcolor" type="hidden" value="#DADADA">
+                
+                <fieldset>
+                    <input type="text" name="searchBar" id="searchBar" autofocus="autofocus"/>
+                    <input type="submit" name="submit" id="submit" value="Search"/>
+                </fieldset>
+                
+                <fieldset>
+                    <select size="1" name="actions" id="actions">
+                        <option>Actions</option>
+                        <option value="archive">Archive</option>
+                        <option value="delete">Delete</option>
+                    </select>
+                    
+                    <button>
+                        <a href="#">Apply</a>
+                    </button>
+                    
+                    <select size="1" name="genre" id="genre">
+                        <option>Genre</option>
+                        <option value="0">Baroque</option>
+                        <option value="1">Renaissance</option>
+                        <option value="2">Realism</option>
+                    </select>
+                    
+                    <button>
+                        <a href="#">Filter</a>
+                    </button>
+                </fieldset>
+                
+                
+            </form>
         </main>
         
         <footer>
