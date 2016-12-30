@@ -30,25 +30,25 @@
         </header>
         
         <main>
-            <form method="post" action="">
+            <form method="post" action="http://www.randyconnolly.com/tests/process.php">
 
                 <fieldset>
-                    <input type="text" name="searchBar" id="searchBar" autofocus="autofocus"/>
-                    <input type="submit" name="submit" id="submit" value="Search"/>
+                    <input type="text" name="search" id="searchBar" autofocus="autofocus"/>
+                    <button>Search</button>
                 </fieldset>
                 
                 <fieldset>
                     <select size="1" name="actions" id="actions">
                         <option>Actions</option>
-                        <option value="archive">Archive</option>
-                        <option value="delete">Delete</option>
+                        <option value="0">Archive</option>
+                        <option value="1">Delete</option>
                     </select>
                     
                     <button>
-                        <a href="#">Apply</a>
+                        <a href="">Apply</a>
                     </button>
                     
-                    <select size="1" name="genre" id="genre">
+                    <select size="1" name="filter" id="filter">
                         <option>Genre</option>
                         <option value="0">Baroque</option>
                         <option value="1">Renaissance</option>
@@ -56,10 +56,69 @@
                     </select>
                     
                     <button>
-                        <a href="#">Filter</a>
+                        <a href="http://google.com">Filter</a>
                     </button>
                 </fieldset>
                 
+                <fieldset>
+                    <table>
+                        <caption>Paintings</caption>
+                        
+                        <tr>
+                            <th scope="col">Image</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Artist</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Genre</th>
+                            <th scope="col">Button</th>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="index[]" value="0"/><img src=""></td>
+                            <td>Death of Marat</td>
+                            <td>David, Jacques-Louis</td>
+                            <td>1793</td>
+                            <td>Romanticism</td>
+                            <td><button><a href="http://google.com">Edit</a></button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="index[]" value="1"/><img src=""></td>
+                            <td>Portrait of Eleanor of Toledo</td>
+                            <td>Bronzino, Agnola</td>
+                            <td>1545</td>
+                            <td>Mannerism</td>
+                            <td><button><a href="http://google.com">Edit</a></button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="index[]" value="2"/><img src=""></td>
+                            <td>Liberty Leading the People</td>
+                            <td>Delacrois, Eugene</td>
+                            <td>1830</td>
+                            <td>Romanticism</td>
+                            <td><button><a href="http://google.com">Edit</a></button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="index[]" value="3"/><img src=""></td>
+                            <td>Arrangement in Grey and Black</td>
+                            <td>Whistler, James Abbott</td>
+                            <td>1871</td>
+                            <td>Realism</td>
+                            <td><button><a href="http://google.com">Edit</a></button></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><input type="checkbox" name="index[]" value="4"/><img src=""></td>
+                            <td>Mademoiselle Caroline Rivere</td>
+                            <td>Ingres Juan-Auguste</td>
+                            <td>1806</td>
+                            <td>Neo-Classicism</td>
+                            <td><button><a href="http://google.com">Edit</a></button></td>
+                        </tr>
+                    </table>
+                </fieldset>
                 
             </form>
         </main>
