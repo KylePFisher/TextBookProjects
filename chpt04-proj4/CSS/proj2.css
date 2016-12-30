@@ -1,0 +1,51 @@
+/* general text formatting */
+
+h1, h2, h3, nav, footer, table, th {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+}
+
+form {
+    margin-right: 4.8%;
+    margin-left: 4.8%;
+    padding-bottom: 0;
+}
+
+fieldset:first-child {
+    background-color: grey;
+}
+
+fieldset:first-child + fieldset {
+    background-color: grey;
+}
+
+table caption {
+    background-color: grey;
+}
+
+table th {
+    background-color: #E9E9E9;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 0;
+}
+
+table td {
+    border-bottom: 1pt solid black;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+    margin-bottom: 0;
+}
+
+table img {
+    float: left;
+}
