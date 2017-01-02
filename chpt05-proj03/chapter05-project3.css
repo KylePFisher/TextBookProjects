@@ -4,23 +4,26 @@ INFO 2900 6A
 Brown, McCune, Paschall, Rosas
 Dcember 30 2016 */
 
+/*Added because I use a 1600 x 900 monitor, and the margins from the
+default container had so much unused space on the left and right margins
+that most elements got shifted onto new lines*/
 @media (min-width: 900px) {
     .container{
         max-width: 1300px;
     }
 }
 
-.blocks
-{
-   margin: 0rem 0rem 0rem 20%;
-}
+/*.blocks*/
+/*{*/
+/*   margin: 0rem 0rem 0rem 20%;*/
+/*}*/
 
-.blocks .btn-primary 
-{
-    padding: .2rem .2rem;
-    margin: 1rem 2rem 1rem 2rem;  
-    border-radius: 0;
-}
+/*.blocks .btn-primary */
+/*{*/
+/*    padding: .2rem .2rem;*/
+/*    margin: 1rem 2rem 1rem 2rem;  */
+/*    border-radius: 0;*/
+/*}*/
 
 h1 { font-size: 3em; font-weight: bold; margin-top: 0;}
 
@@ -29,13 +32,15 @@ div#topHeaderRow {
 }
 
 .price { 
-
+   font-size: 2.5rem;
+   font-weight: bold;
 }
 
-.similarTitle {  }
+.similarTitle { text-align: center; }
 
-.cartText { 
-
+.cartText span{ 
+   font-style: italic;
+   font-weight: normal;
 }
 
 footer {
