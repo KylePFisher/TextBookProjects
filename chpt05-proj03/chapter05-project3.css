@@ -1,0 +1,52 @@
+/* Kyle Fisher
+chapter05-project3.css
+INFO 2900 6A
+Brown, McCune, Paschall, Rosas
+Dcember 30 2016 */
+
+@media (min-width: 900px) {
+    .container{
+        max-width: 1300px;
+    }
+}
+
+.blocks
+{
+   margin: 0rem 0rem 0rem 20%;
+}
+
+.blocks .btn-primary 
+{
+    padding: .2rem .2rem;
+    margin: 1rem 2rem 1rem 2rem;  
+    border-radius: 0;
+}
+
+h1 { font-size: 3em; font-weight: bold; margin-top: 0;}
+
+div#topHeaderRow {
+   font-size: 0.9em;
+}
+
+.price { 
+
+}
+
+.similarTitle {  }
+
+.cartText { 
+
+}
+
+footer {
+   margin-top: 1em;
+   background-color: #E7E7E7;
+
+}
+
+.tight-form-group {  }
+
+#copyrightRow { 
+    background-color: #3A3A3A; 
+
+}
