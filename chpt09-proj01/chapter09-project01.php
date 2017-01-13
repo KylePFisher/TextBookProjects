@@ -23,7 +23,7 @@
 <body>
     <!-- 
      Kyle Fisher
-     Chapter 6, Project 3
+     Chapter 9, Project 1
      INFO 2900 6A
      Brown, McCune, Paschall, Rosas 
      1/12/17

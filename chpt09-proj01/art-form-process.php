@@ -21,7 +21,13 @@
 </head>
 
 <body>
-
+<!-- 
+     Kyle Fisher
+     Chapter 9, Project 1
+     INFO 2900 6A
+     Brown, McCune, Paschall, Rosas 
+     1/12/17
+    -->
 <?php include 'art-header.inc.php' ?>
 
 <div class="container">
@@ -37,12 +43,19 @@
 
            <ul class="nav nav-pills nav-stacked">
                 <?php
-                    $sidebarlist = array("Login", "Register", "Password Recovery", "My Account",
+                    $sidebar = array("Login", "Register", "Password Recovery", "My Account",
                     "Return", "Order History");
-                    // foreach ($sidebar as $value)
-                    // {
-                    //     echo "<li>Bob</li>";
-                    // }
+                    foreach ($sidebar as $value)
+                    {
+                        if ($value == "My Account")
+                        {
+                            echo "<li class=\"active\"><a href=\"#\">" . $value . "</a></li>";
+                        }
+                        else 
+                        {
+                            echo "<li><a href=\"#\">" . $value . "</a></li>";
+                        }
+                    }
                 ?>
            </ul>  
            

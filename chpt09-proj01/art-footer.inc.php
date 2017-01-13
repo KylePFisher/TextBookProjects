@@ -1,4 +1,14 @@
-
+    <!-- 
+     Kyle Fisher
+     Chapter 9, Project 1
+     INFO 2900 6A
+     Brown, McCune, Paschall, Rosas 
+     1/12/17
+    -->
+    
+<?php
+    include "art-data.php";
+?>
 
 <footer>
    <div class="container">
@@ -18,33 +28,20 @@
          </div>
          <div class="col-md-3">
             <h4><span class="glyphicon glyphicon-shopping-cart"></span> Just Ordered</h4>
-            <div class="media">
-              <a class="pull-left" href="#">
-                <img class="media-object" src="images/art/tiny/099110.jpg" alt="...">
-              </a>
-              <div class="media-body">
-                <p class="media-heading similarTitle"><a href="#">The Veiled Woman</a></p>
-                <em>5 minutes ago</em>
-              </div>
-            </div>
-            <div class="media">
-              <a class="pull-left" href="#">
-                <img class="media-object" src="images/art/tiny/116010.jpg" alt="...">
-              </a>
-              <div class="media-body">
-                <p class="media-heading similarTitle"><a href="#">Artist Holding a Thistle</a></p>
-                <em>11 minutes ago</em>
-              </div>
-            </div>   
-            <div class="media">
-              <a class="pull-left" href="#">
-                <img class="media-object" src="images/art/tiny/113010.jpg" alt="...">
-              </a>
-              <div class="media-body">
-                <p class="media-heading similarTitle"><a href="#">Self-portrait in a Straw Hat</a></p>
-                <em>23 minutes ago</em>
-              </div>
-            </div>  
+            <?php
+                foreach($recentOrders as $painting)
+                {
+                    echo '<div class="media">
+                          <a class="pull-left" href="#">
+                            <img class="media-object" src="images/art/tiny/' . $painting["filename"] . '" alt="...">
+                          </a>
+                          <div class="media-body">
+                            <p class="media-heading similarTitle"><a href="#">' . $painting["title"] . '</a></p>' .
+                            '<em>' . $painting["time"] . ' minutes ago</em>
+                          </div>
+                        </div>';
+                }
+            ?>
          </div>       
          <div class="col-md-3">
             <h4><span class="glyphicon glyphicon-envelope"></span> Contact us</h4>
