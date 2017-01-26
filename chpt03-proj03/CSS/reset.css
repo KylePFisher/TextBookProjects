@@ -1,0 +1,15 @@
+/* Kyle Fisher
+reset.css
+INFO 2900 6A
+Brown, McCune, Paschall, Rosas
+Dcember 12 2016 */
+
+html, body, header, footer, hgroup, nav, article, section, figure,
+figcaption, h1, h2, h3, h4, li, body, div, p, img
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}

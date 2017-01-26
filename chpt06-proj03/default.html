@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chapter 4</title>
+        <link rel="stylesheet" href="CSS/reset.css" media="screen">
+        <link rel="stylesheet" href="CSS/chpt06-artstore.css" media="screen">
+    </head>
+    
+    <body>
+    <!-- 
+     Kyle Fisher
+     Chapter 6, Project 3
+     INFO 2900 6A
+     Brown, McCune, Paschall, Rosas 
+     1/7/17
+    -->
+        <header>
+            
+        </header>
+        
+        <main>
+            <form method="post" action="http://www.randyconnolly.com/tests/process.php">
+
+                <fieldset>
+                    <input type="text" name="search" id="searchBar" 
+                    autofocus="autofocus" placeholder="Search titles"/>
+                    <button type="submit">Search</button>
+                </fieldset>
+                
+                <fieldset>
+                    <select size="1" name="actions" id="actions">
+                        <option>Actions</option>
+                        <option value="0">Archive</option>
+                        <option value="1">Delete</option>
+                    </select>
+                    
+
+                    <button type="button">
+                        Apply
+                    </button>
+
+                    
+                    <select size="1" name="filter" id="filter">
+                        <option>Genre</option>
+                        <option value="0">Baroque</option>
+                        <option value="1">Renaissance</option>
+                        <option value="2">Realism</option>
+                    </select>
+                    
+
+                    <button type="button">
+                        Filter
+                    </button>
+
+                </fieldset>
+                
+                <fieldset>
+                    <table>
+                        <caption>Paintings</caption>
+                        
+                        <tr>
+                            <th scope="col">Box</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Artist</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Genre</th>
+                            <th scope="col">Edit</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="index[]" value="0"/>
+                            </td>
+                            <td>
+                                <img class="thumbnail" src="images/05030.jpg"
+                                alt="A Death of Marat painting">
+                            </td>
+                            <td>Death of Marat</td>
+                            <td>David, Jacques-Louis</td>
+                            <td>1793</td>
+                            <td>Romanticism</td>
+                            <td>
+                                <button type="button">
+                                    <img src="images/edit16.png" 
+                                    alt="Edit button photo">Edit
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            
+                            <td>
+                                <input type="checkbox" name="index[]" value="1"/>
+                            </td>
+                            <td>
+                                <img class="thumbnail" src="images/06010.jpg"
+                                alt="Portrait of Eleanor of Toledo painting">
+                            </td>
+                            <td>Portrait of Eleanor of Toledo</td>
+                            <td>Bronzino, Agnola</td>
+                            <td>1545</td>
+                            <td>Mannerism</td>
+                            <td>
+                                <button type="button">
+                                    <img src="images/edit16.png" 
+                                    alt="Edit button photo">Edit
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="index[]" value="2"/>
+                            </td>
+                            <td>
+                                <img class="thumbnail" src="images/07020.jpg"
+                                alt="Liberty Leading the People painting">
+                            </td>
+                            <td>Liberty Leading the People</td>
+                            <td>Delacrois, Eugene</td>
+                            <td>1830</td>
+                            <td>Romanticism</td>
+                            <td>
+                                <button type="button">
+                                    <img src="images/edit16.png" 
+                                    alt="Edit button photo">Edit
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="index[]" value="3"/>
+                            </td>
+                            <td>
+                                <img class="thumbnail" src="images/13030.jpg"
+                                alt="Arrangement in grey and black painting">
+                            </td>
+                            <td>Arrangement in Grey and Black</td>
+                            <td>Whistler, James Abbott</td>
+                            <td>1871</td>
+                            <td>Realism</td>
+                            <td>
+                                <button type="button">
+                                    <img src="images/edit16.png" 
+                                    alt="Edit button photo">Edit
+                                </button>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="index[]" value="4"/>
+                            </td>
+                            <td>
+                                <img class="thumbnail" src="images/120010.jpg"
+                                alt="Mademoiselle Caroline Rivere">
+                            </td>
+                            <td>Mademoiselle Caroline Rivere</td>
+                            <td>Ingres Juan-Auguste</td>
+                            <td>1806</td>
+                            <td>Neo-Classicism</td>
+                            <td>
+                                <button type="button">
+                                    <img src="images/edit16.png" 
+                                    alt="Edit button photo">Edit
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                
+            </form>
+        </main>
+        
+        <footer>
+            
+        </footer>
+    <script type="text/javascript" src="Javascript/artstore.js"></script>
+    </body>
+</html>

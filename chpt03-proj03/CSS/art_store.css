@@ -1,0 +1,97 @@
+/* Kyle Fisher
+art_store.css
+INFO 2900 6A
+Brown, McCune, Paschall, Rosas
+Dcember 12 2016 */
+
+@font-face {
+    font-family: SixCaps;
+    src: url(../fonts/SixCaps.ttf);
+    font-stretch: semi-condensed;
+}
+
+/* Covering the entire background of the page with an image, and setting fonts */
+body {
+    background:url("../images/background/art-background4.jpg") no-repeat; 
+    background-size: cover;
+    font-family: arial, sans-serif;
+}
+
+/*To make sure every major element is the same space away from the edge of the screen*/
+header, main, footer {
+    margin: 0rem 4rem 0.5rem 4rem;
+    padding: 0rem 1rem 0rem 1rem;
+}
+
+/* This changes the header and footer backgrounds*/
+header, footer {
+    color: black;
+    background: rgba(119, 113, 106, .8);
+}
+
+/* Define font family and font-size */
+header {
+    font-family: SixCaps, arial, sans-serif;
+    font-size: 3rem;
+}
+
+/* Changes navigation lists for site links into inline elements */
+nav li, footer li {display: inline-block;}
+ nav li a, footer li a { text-decoration: none; padding: 0.2rem;}
+ nav li a:link, footer li a:link { color: #000000; }
+ nav li a:visited, footer li a:visited { color: #000000; }
+ nav li a:hover, footer li a:hover { color: #000000; }
+ nav li a:active, footer li a:active { color: #000000; }
+
+nav ul, footer ul { 
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Making the general content of the page's background transparent via rgba */
+main {
+    background: rgba(255, 255, 255, .8);
+}
+
+/* Adding a bottom border to the title of the painting */
+main h2 {
+    border-bottom-style:  solid;
+    border-bottom-width:  0.2rem;
+    font-size: 2rem;
+}
+
+/* Adding bottom border and margins for the review and related painting sections */
+main h3 {
+    border-bottom-style:  solid;
+    border-bottom-width:  0.2rem;
+    font-size: 1.7rem;
+    
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+/* p is used throughout main, but this style is mostly to give the painting description space */
+main p {
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+/* Give a dark background to the share buttons to logically group them */
+#shareButtons {
+    background-color: #929292;
+    
+    border-color: #424242;
+    border-width: 200rem;
+    border-radius: 0.2rem;
+    
+    margin: 0 50% 0 0;
+}
+
+/* Giving space to the review section */
+#reviewSection {
+    padding: 0rem 0rem 1rem 0rem;
+}
+
+/* Giving space to the related section */
+#relatedSection {
+    padding: 1rem 0rem 1rem 0rem;
+}
